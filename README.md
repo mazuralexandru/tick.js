@@ -5,7 +5,7 @@ Tick.js is a minimalist, high-performance task scheduler designed specifically f
 Its core purpose is to provide **resilience against unexpected script termination**. The internal implementation is intentionally terse, avoiding standard control flow in its core executor to guarantee task completion even when the host environment halts script execution mid-frame.
 
 
-## Web doccumentation [https://tickjs.netlify.app/](https://tickjs.netlify.app/)
+## Web documentation [https://tickjs.netlify.app/](https://tickjs.netlify.app/)
 ## The Problem: Unexpected Execution Halts
 
 In many sandboxed or resource-constrained environments, scripts operate on a limited "execution budget" per frame or tick. If a script performs too many operations (e.g., function calls, complex loops), the environment may terminate it instantly to prevent freezing. This is not a catchable error - the script simply stops.
